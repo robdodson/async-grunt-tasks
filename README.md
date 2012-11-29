@@ -6,7 +6,7 @@ The tasks take advantage of the [grunt.async](https://github.com/gruntjs/grunt/b
 
 ## Example
 
-``` js tasks/grunt-read-write-local.js
+``` js
 'use strict';
 
 var fs = require('fs');
