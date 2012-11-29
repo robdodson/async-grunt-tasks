@@ -2,11 +2,11 @@
 
 This is a little tutorial to guide you through the process of writing asynchronous grunt tasks. Checkout the accompanying blog post at [http://robdodson.me/blog/2012/11/29/asynchronous-grunt-tasks/](http://robdodson.me/blog/2012/11/29/asynchronous-grunt-tasks/)
 
-The tasks take advantage of the [grunt.async method](https://github.com/gruntjs/grunt/blob/master/docs/api_task.md#thisasync--grunttaskcurrentasync) to notify the grunt process when it's safe to resume.
+The tasks take advantage of the [grunt.async](https://github.com/gruntjs/grunt/blob/master/docs/api_task.md#thisasync--grunttaskcurrentasync) method to notify the grunt process when it's safe to resume.
 
 ## Example
 
-``` tasks/grunt-read-write-local.js
+``` js tasks/grunt-read-write-local.js
 'use strict';
 
 var fs = require('fs');
