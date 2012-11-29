@@ -1,0 +1,10 @@
+{
+  "name": "async-grunt-tasks",
+  "author": "Rob Dodson <lets.email.rob@gmail.com>",
+  "version": "0.1.0",
+  "homepage": "http://robdodson.me",
+  "dependencies": {
+    "grunt-contrib-clean": "~0.3",
+    "request": "~2.12"
+  }
+}
