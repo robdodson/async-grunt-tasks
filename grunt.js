@@ -7,15 +7,20 @@ module.exports = function(grunt) {
     pkg: '<json:package.json>',
     
     clean: {
-      dist: ['write-this.txt', 'static-page.html']
+      output: 'output'
+    },
+
+    mkdirs: {
+      output: 'output'
     },
 
     readWriteLocal: {
-      'write-this.txt': 'read-this.txt'
+      'output/write-this.txt': 'read-this.txt'
     },
 
     readWriteWeb: {
-      'static-page.html': 'http://robdodson.me'
+      'output/static-page.html': 'http://robdodson.me',
+      'output/static-page2.html': 'http://example.com'
     }
 
   });
@@ -27,6 +32,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
 
   // Default task.
-  grunt.registerTask('default', 'clean readWriteLocal readWriteWeb');
+  grunt.registerTask('default', 'clean mkdirs readWriteLocal readWriteWeb');
 };
 
