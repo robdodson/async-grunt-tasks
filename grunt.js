@@ -20,7 +20,7 @@ module.exports = function(grunt) {
 
     readWriteWeb: {
       'output/static-page.html': 'http://robdodson.me',
-      'output/static-page2.html': 'http://example.com'
+      'output/static-page2.html': 'http://nodejs.org/'
     }
 
   });
