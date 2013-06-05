@@ -32,5 +32,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
 
   // Default task.
-  grunt.registerTask('default', ['mkdirs', 'readWriteLocal', 'readWriteWeb']);
+  grunt.registerTask('default', ['clean', 'mkdirs', 'readWriteLocal', 'readWriteWeb']);
 };
